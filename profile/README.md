@@ -38,6 +38,10 @@ Cinco frentes, uma missão.
 | [LightHouse](https://github.com/HOUSE-DE-CRIATIVIDADE/LightHouse) | Em construção |
 | [HOUSE-ROOM](https://github.com/HOUSE-DE-CRIATIVIDADE/HOUSE-ROOM) | Em construção |
 
+## Como colaborar
+
+Trabalhe numa branch própria e abra o pull request com a aprovação do líder, sem push direto na `main`. O combinado está no [CONTRIBUTING.md](../CONTRIBUTING.md) e a política de segurança na [SECURITY.md](../SECURITY.md).
+
 ---
 
 <div align="center">
