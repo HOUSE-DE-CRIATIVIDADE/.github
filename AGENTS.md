@@ -61,7 +61,7 @@ Não edite `version` no `package.json`. A tag e a Release saem no merge, pelo wo
 
 ## Commits
 
-O autor é Guilherme Aranega <guilhermee.aranega@gmail.com>. Não use Cursor Agent como autor nem como co-autor. A mensagem é curta e leva um prefixo: `FEAT:`, `FIX:`, `DOCS:` ou `CHORE:`.
+A mensagem é curta e leva um prefixo: `FEAT:`, `FIX:`, `DOCS:` ou `CHORE:`.
 
 ## Pull request
 
