@@ -1,6 +1,47 @@
 # Instruções para agentes (Cursor / Claude / Grok)
 
-Este arquivo é a base para copiar nos projetos da House: PreHouse, PhotoHouse, LightHouse, HOUSE-ROOM e House Academy. O jeito de trabalhar está no [CONTRIBUTING.md](https://github.com/HOUSE-DE-CRIATIVIDADE/.github/blob/main/CONTRIBUTING.md). Vulnerabilidade e segredo estão no [SECURITY.md](https://github.com/HOUSE-DE-CRIATIVIDADE/.github/blob/main/SECURITY.md).
+Markdown livre, sem campos obrigatórios. Este arquivo é a base para copiar nos projetos da House: PreHouse, PhotoHouse, LightHouse, HOUSE-ROOM e House Academy. O `AGENTS.md` mais próximo do arquivo editado é o que vale.
+
+O jeito de trabalhar está no [CONTRIBUTING.md](https://github.com/HOUSE-DE-CRIATIVIDADE/.github/blob/main/CONTRIBUTING.md). Vulnerabilidade e segredo estão no [SECURITY.md](https://github.com/HOUSE-DE-CRIATIVIDADE/.github/blob/main/SECURITY.md).
+
+## Visão geral do projeto
+
+<o que este repositório é, em uma frase>
+
+É pra <pra quem>. O projeto da House aqui é <PreHouse | PhotoHouse | LightHouse | HOUSE-ROOM | House Academy>.
+
+- PreHouse é o Premiere da House.
+- PhotoHouse é o Photoshop da House.
+- LightHouse: <o que entrega>.
+- HOUSE-ROOM: <o que entrega>.
+- House Academy: <o que entrega>.
+
+A missão da House é creative minds for the kingdom.
+
+## Comandos
+
+Rode lint, testes e build antes de commitar e corrija até ficar verde.
+
+- Setup: `<comando>`
+- Dev: `<comando>`
+- Teste: `<comando>`
+- Lint: `<comando>`
+- Build: `<comando>`
+
+## Estrutura do repositório
+
+- `<pasta/>` — <o que mora aqui>
+- `<pasta/>` — <o que mora aqui>
+
+## Estilo de código
+
+<convenção deste repositório: nomes, arquivos, formato>
+
+Siga o padrão do código ao redor. Comentários e textos de interface ficam em português.
+
+## Testes
+
+Adicione ou atualize testes para o que mudar. Rode o comando de teste acima.
 
 ## Issues
 
@@ -22,6 +63,18 @@ Não edite `version` no `package.json`. A tag e a Release saem no merge, pelo wo
 
 O autor é Guilherme Aranega <guilhermee.aranega@gmail.com>. Não use Cursor Agent como autor nem como co-autor. A mensagem é curta e leva um prefixo: `FEAT:`, `FIX:`, `DOCS:` ou `CHORE:`.
 
+## Pull request
+
+O título leva um prefixo: `FEAT:`, `FIX:`, `DOCS:` ou `CHORE:`. Use o modelo de PR da organização. Descreva como testar. Se a mudança for visual, inclua print ou vídeo. Uma mudança por PR.
+
 ## Segurança
 
-Nunca faça commit de segredo: `.env`, chave, token ou senha. Se algo vazar, avise os admins na hora. O caminho está no [SECURITY.md](https://github.com/HOUSE-DE-CRIATIVIDADE/.github/blob/main/SECURITY.md).
+Nunca faça commit de segredo: `.env`, chave, token ou senha. Não logue dados pessoais. Dependência nova só entra com justificativa. Se algo vazar, avise os admins na hora. O caminho está no [SECURITY.md](https://github.com/HOUSE-DE-CRIATIVIDADE/.github/blob/main/SECURITY.md).
+
+## Limites do agente
+
+Nunca faça merge, deploy, force-push, apagar branches ou mexer em configuração da org sem OK explícito do líder. Não edite arquivos gerados nem lockfiles na mão. Em dúvida, pergunte.
+
+## Monorepo
+
+Se uma parte do repositório pedir outra regra, coloque um `AGENTS.md` aninhado na subpasta. O mais próximo manda.
