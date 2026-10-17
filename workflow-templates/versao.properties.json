@@ -1,0 +1,6 @@
+{
+  "name": "Versão",
+  "description": "Cria a tag e a release quando um pull request entra na main. Não mexe no package.json.",
+  "iconName": "octicon tag",
+  "categories": ["Automation"]
+}
