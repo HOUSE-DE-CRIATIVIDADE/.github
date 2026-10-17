@@ -8,13 +8,13 @@ O jeito de trabalhar está no [CONTRIBUTING.md](https://github.com/HOUSE-DE-CRIA
 
 <o que este repositório é, em uma frase>
 
-É pra <pra quem>. O projeto da House aqui é <PreHouse | PhotoHouse | LightHouse | HOUSE-ROOM | House Academy>.
+É pra <pra quem>. Os projetos da House são:
 
 - PreHouse é o Premiere da House.
 - PhotoHouse é o Photoshop da House.
-- LightHouse: <o que entrega>.
-- HOUSE-ROOM: <o que entrega>.
-- House Academy: <o que entrega>.
+- LightHouse é o Lightroom da House.
+- HOUSE-ROOM é o site central da House.
+- House Academy é a plataforma de cursos da House.
 
 A missão da House é creative minds for the kingdom.
 
