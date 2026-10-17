@@ -1,0 +1,6 @@
+{
+  "name": "CI da House",
+  "description": "Confere o projeto no pull request pra main e quando o código entra na main. Não publica e não faz deploy.",
+  "iconName": "octicon check",
+  "categories": ["Continuous integration", "JavaScript"]
+}

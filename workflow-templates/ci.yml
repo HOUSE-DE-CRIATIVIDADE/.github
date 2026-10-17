@@ -1,0 +1,79 @@
+# CI da House
+# Confere o projeto no pull request pra main e quando o código entra na main.
+# Nada aqui publica ou faz deploy.
+# Os projetos ainda podem estar sem código: cada passo só roda se o arquivo existir.
+
+name: CI da House
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  node22:
+    name: Node 22
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Ver o que o projeto tem
+        id: projeto
+        shell: bash
+        run: |
+          if [ -f package.json ]; then
+            echo "package=sim" >> "$GITHUB_OUTPUT"
+          else
+            echo "package=nao" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -f package-lock.json ]; then
+            echo "lock=sim" >> "$GITHUB_OUTPUT"
+          else
+            echo "lock=nao" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -f tsconfig.json ]; then
+            echo "ts=sim" >> "$GITHUB_OUTPUT"
+          else
+            echo "ts=nao" >> "$GITHUB_OUTPUT"
+          fi
+
+      # O cache do npm precisa do package-lock. Sem ele, o Node sobe do mesmo jeito.
+      - name: Node 22
+        if: steps.projeto.outputs.lock != 'sim'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Node 22 com cache do npm
+        if: steps.projeto.outputs.lock == 'sim'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependências
+        if: steps.projeto.outputs.package == 'sim' && steps.projeto.outputs.lock == 'sim'
+        run: npm ci --no-audit --no-fund
+
+      - name: Checar os tipos
+        if: steps.projeto.outputs.ts == 'sim'
+        run: npx tsc --noEmit
+
+      - name: Testes
+        if: steps.projeto.outputs.package == 'sim'
+        run: npm test --if-present
+
+      - name: Build
+        if: steps.projeto.outputs.package == 'sim'
+        run: npm run build --if-present
