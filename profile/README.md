@@ -2,7 +2,7 @@
 
 <img src="./mascote.png" alt="Mascote da House de Criatividade" width="220" />
 
-# HOUSE DE CRIATIVIDADE
+# HOUSE DE CRIATIVIDADE ✳️
 
 **creative minds for the kingdom**
 
