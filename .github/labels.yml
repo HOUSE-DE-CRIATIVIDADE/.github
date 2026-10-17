@@ -1,0 +1,34 @@
+# Labels padrão da House de Criatividade.
+# Este arquivo só documenta nome, cor e descrição. Ele não cria as labels no GitHub.
+
+- name: bug
+  color: "d73a4a"
+  description: Algo que quebrou ou saiu diferente do esperado
+
+- name: ideia
+  color: "fbca04"
+  description: Uma ideia nova para a House
+
+- name: design
+  color: "b087e8"
+  description: Peça visual, identidade ou interface
+
+- name: vídeo
+  color: "f97316"
+  description: Aftermovie, reel ou cobertura em vídeo
+
+- name: copy
+  color: "0e8a16"
+  description: Texto, roteiro ou legenda
+
+- name: docs
+  color: "0075ca"
+  description: Documentação e guias
+
+- name: urgente
+  color: "b60205"
+  description: Precisa de atenção agora
+
+- name: ajuda
+  color: "008672"
+  description: Alguém da House pode pegar e ajudar
