@@ -39,6 +39,18 @@ Rode lint, testes e build antes de commitar e corrija até ficar verde.
 
 Siga o padrão do código ao redor. Comentários e textos de interface ficam em português.
 
+## Impeccable
+
+A skill Impeccable está instalada para trabalho de interface e design. A base fica neste repositório: `.cursor/skills/impeccable` para o Cursor e `.claude/skills/impeccable` para o Claude Code. Cada projeto copia essas pastas para a própria raiz:
+
+```bash
+mkdir -p <projeto>/.cursor/skills <projeto>/.claude/skills
+cp -R .cursor/skills/impeccable <projeto>/.cursor/skills/
+cp -R .claude/skills/impeccable <projeto>/.claude/skills/
+```
+
+O instalador também deixou os agentes em `.cursor/agents` e `.claude/agents`, o hook do Cursor em `.cursor/hooks.json` e o hook do Claude Code em `.claude/settings.local.json`. Copie esses arquivos junto quando o projeto for usar a checagem automática de interface.
+
 ## Testes
 
 Adicione ou atualize testes para o que mudar. Rode o comando de teste acima.
