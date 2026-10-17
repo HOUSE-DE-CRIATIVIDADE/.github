@@ -14,7 +14,7 @@ O nome da branch começa com um destes prefixos:
 - `chore/` para manutenção
 - `docs/` para documentação
 
-Abra o pull request apontando para a `main`. Para entrar, ele precisa de pelo menos 1 aprovação do Guilherme.
+Abra o pull request apontando para a `main`. Para entrar, ele precisa de pelo menos 1 aprovação do líder.
 
 Use o template de PR. Conte o que muda, como testar, e preencha o checklist.
 
